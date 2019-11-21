@@ -62,3 +62,10 @@ def Intersection(forst, sekund):
             tredje.append(i)
     return tredje
 
+def NotIn(vispirms, otrais):
+    spriedums = []
+    for i in vispirms:
+        if i not in otrais:
+            spriedums.append(i)
+    return spriedums
+            
