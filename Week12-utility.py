@@ -53,4 +53,12 @@ def Union(najprv, druhy):
     for i in druhy:
         if i not in tretina:
             tretina.append(i)
-    print(tretina)
+    return tretina
+
+def Intersection(forst, sekund):
+    tredje = []
+    for i in forst:
+        if i in sekund:
+            tredje.append(i)
+    return tredje
+
