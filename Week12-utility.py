@@ -29,3 +29,18 @@ def FindWordCount(issalist, issastring):
         list_string += i
     count = list_string.count(issastring)
     print('OUTPUT %d' % (count))
+
+def ScoreFinder(pertama, kedua, tali):
+    tali = tali.lower()
+    tali = tali.capitalize()
+    count = 0
+    score = -9
+    for i in pertama:
+        if i == tali:
+            score = kedua[count]
+        else:
+            count += 1
+    if score == -9:
+        print('OUTPUT player not found')
+    else:
+        print('OUTPUT {player} got a score of {scored}'.format(player=tali,scored=score))
