@@ -44,3 +44,13 @@ def ScoreFinder(pertama, kedua, tali):
         print('OUTPUT player not found')
     else:
         print('OUTPUT {player} got a score of {scored}'.format(player=tali,scored=score))
+
+def Union(najprv, druhy):
+    tretina = []
+    for i in najprv:
+        if i not in tretina:
+            tretina.append(i)
+    for i in druhy:
+        if i not in tretina:
+            tretina.append(i)
+    print(tretina)
