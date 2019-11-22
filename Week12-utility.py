@@ -28,7 +28,7 @@ def FindWordCount(issalist, issastring):
     for i in issalist:
         list_string += i
     count = list_string.count(issastring)
-    print('OUTPUT %d' % (count))
+    return count
 
 def ScoreFinder(pertama, kedua, tali):
     tali = tali.lower()
